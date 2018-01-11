@@ -30,4 +30,5 @@ dependencies {
 
     // Liquidfun wrapper
     compile project(path: ':liquidwrapper')
+    //compile 'com.github.shibakaneki:LiquidFunWrapper:v1.0-alpha'
 }
