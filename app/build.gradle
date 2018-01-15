@@ -29,5 +29,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     // Liquidfun wrapper
-    compile project(path: ':liquidwrapper')
+    compile project(':liquidwrapper')
 }
