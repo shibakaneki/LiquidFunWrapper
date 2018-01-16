@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/shibakaneki/LiquidFunWrapper'
     gitUrl = 'https://github.com/shibakaneki/LiquidFunWrapper.git'
 
-    libraryVersion = 'v1.0'
+    libraryVersion = '1.1'
 
     developerId = 'shibakaneki'
     developerName = 'Clerc Didier'
