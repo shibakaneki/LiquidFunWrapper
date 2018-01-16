@@ -12,14 +12,17 @@ Ensure that your project has _jcenter_ in the repositories list:
          google()
          jcenter()
      }
- }```
+ }
+ ```
 
 Then, add the following dependency in your application module _build.gradle_ file:
 
-```compile 'ch.shibastudio:liquidwrapper:1.1'```
+```compile 'ch.shibastudio:liquidwrapper:1.1'
+```
 
 
 Finally, the *Activity* using this library must load the library by adding this line in the _onCreate_ method:
 
-```System.loadLibrary("liquidwrapper");```
+```System.loadLibrary("liquidwrapper");
+```
 
