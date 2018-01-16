@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'LiquidFunWrapper'
+    bintrayName = 'liquidwrapper'
+
+    publishedGroupId = 'ch.shibastudio'
+    libraryName = 'liquidwrapper'
+    artifact = 'liquidwrapper'
+
+    libraryDescription = 'Android wrapper of the LiquidFun physical engine.'
+
+    siteUrl = 'https://github.com/shibakaneki/LiquidFunWrapper'
+    gitUrl = 'https://github.com/shibakaneki/LiquidFunWrapper.git'
+
+    libraryVersion = 'v1.0'
+
+    developerId = 'shibakaneki'
+    developerName = 'Clerc Didier'
+    developerEmail = 'kanekishiba@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -23,7 +47,7 @@ android {
             debuggable true
         }
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -44,3 +68,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
