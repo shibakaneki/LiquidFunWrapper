@@ -95,6 +95,8 @@ public class LiquidWrapperJNI {
 	public final static native float Body_getPositionX(long bodyPtr);
 	public final static native float Body_getPositionY(long bodyPtr);
 	public final static native float Body_getPosition2(long bodyPtr, Vec2 pos);
+	public final static native void Body_setActive(long bodyPtr, boolean isActive);
+	public final static native boolean Body_isActive(long bodyPtr);
 
 	// FixtureDef
 	public final static native long FixtureDef_new();

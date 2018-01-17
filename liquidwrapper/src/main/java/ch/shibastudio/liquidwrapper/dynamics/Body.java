@@ -128,4 +128,20 @@ public class Body extends AbstractNativeObject{
 	public float getGravityScale(){
 		return LiquidWrapperJNI.BodyDef_getGravityScale(super.getPtr());
 	}
+
+	/**
+	 * Sets the active state of the body.
+	 * @param isActive as a flag whether the body is active.
+	 */
+	public void setActive(boolean isActive){
+		LiquidWrapperJNI.Body_setActive(super.getPtr(), isActive);
+	}
+
+	/**
+	 * Gets an indication whether the body is active.
+	 * @return true if the body is active; otherwise false.
+	 */
+	public boolean isActive(){
+		return LiquidWrapperJNI.Body_isActive(super.getPtr());
+	}
 }

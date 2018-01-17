@@ -143,6 +143,25 @@ JNIEXPORT jfloat JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_Body
     return (jfloat)pBody->GetPositionY();
 }
 
+JNIEXPORT void JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_Body_1setActive(
+        JNIEnv* env,
+        jobject obj,
+        jlong bodyPtr,
+        jboolean isActive){
+
+    b2Body* pBody = reinterpret_cast<b2Body*>(bodyPtr);
+    pBody->SetActive((bool)isActive);
+}
+
+JNIEXPORT jboolean JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_Body_1isActive(
+        JNIEnv* env,
+        jobject obj,
+        jlong bodyPtr){
+
+    b2Body* pBody = reinterpret_cast<b2Body*>(bodyPtr);
+    return (jfloat)pBody->IsActive();
+}
+
 #ifdef __cplusplus
 }
 #endif

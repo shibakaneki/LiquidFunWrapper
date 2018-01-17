@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/shibakaneki/LiquidFunWrapper'
     gitUrl = 'https://github.com/shibakaneki/LiquidFunWrapper.git'
 
-    libraryVersion = '1.1'
+    libraryVersion = '1.2'
 
     developerId = 'shibakaneki'
     developerName = 'Clerc Didier'
@@ -30,7 +30,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName "1.2"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
