@@ -312,6 +312,17 @@ public class LiquidWrapperJNI {
 	public final static native int ParticleSystem_getMaxParticleCount(long particleSystemPtr);
 	public final static native long ParticleSystem_createParticleGroup(long particleSystemPtr, long particleGroupDefPtr);
 	public final static native void ParticleSystem_setParticleLifetime(long particleSystemPtr, int particleIndex, float lifetime);
+	public final static native void ParticleSystem_setDensity(long particleSystemPtr, float density);
+	public final static native float ParticleSystem_getDensity(long particleSystemPtr);
+	public final static native void ParticleSystem_setPaused(long particleSystemPtr, boolean isPaused);
+	public final static native boolean ParticleSystem_isPaused(long particleSystemPtr);
+	public final static native void ParticleSystem_setGravityScale(long particleSystemPtr, float gravityScale);
+	public final static native float ParticleSystem_getGravityScale(long particleSystemPtr);
+	public final static native void ParticleSystem_setDamping(long particleSystemPtr, float damping);
+	public final static native float ParticleSystem_getDamping(long particleSystemPtr);
+	public final static native void ParticleSystem_setRadius(long particleSystemPtr, float radius);
+	public final static native float ParticleSystem_getRadius(long particleSystemPtr);
+
 
 	// Transform
 	public final static native long Transform_new();

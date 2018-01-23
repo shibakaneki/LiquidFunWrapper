@@ -161,4 +161,84 @@ public class ParticleSystem extends AbstractNativeObject{
 	public void setParticleLifetime(int particleIndex, float lifetime){
 		LiquidWrapperJNI.ParticleSystem_setParticleLifetime(super.getPtr(), particleIndex, lifetime);
 	}
+
+	/**
+	 * Sets the density.
+	 * @param density as the given density.
+	 */
+	public void setDensity(float density){
+		LiquidWrapperJNI.ParticleSystem_setDensity(super.getPtr(), density);
+	}
+
+	/**
+	 * Gets the density.
+	 * @return the particle density.
+	 */
+	public float getDensity(){
+		return LiquidWrapperJNI.ParticleSystem_getDensity(super.getPtr());
+	}
+
+	/**
+	 * Pauses or resume the particles simulation.
+	 * @param isPaused as the paused state.
+	 */
+	public void setPaused(boolean isPaused){
+		LiquidWrapperJNI.ParticleSystem_setPaused(super.getPtr(), isPaused);
+	}
+
+	/**
+	 * Gets an indication whether the particle simulation is paused.
+	 * @return true if the simulation is paused; otherwise false.
+	 */
+	public boolean isPaused(){
+		return LiquidWrapperJNI.ParticleSystem_isPaused(super.getPtr());
+	}
+
+	/**
+	 * Sets the gravity scale.
+	 * @param gravityScale as the given gravity scale.
+	 */
+	public void setGravityScale(float gravityScale){
+		LiquidWrapperJNI.ParticleSystem_setGravityScale(super.getPtr(), gravityScale);
+	}
+
+	/**
+	 * Gets the gravity scale.
+	 * @return the gravity scale.
+	 */
+	public float getGravityScale(){
+		return LiquidWrapperJNI.ParticleSystem_getGravityScale(super.getPtr());
+	}
+
+	/**
+	 * Sets the damping.
+	 * @param damping as the given damping.
+	 */
+	public void setDamping(float damping){
+		LiquidWrapperJNI.ParticleSystem_setDamping(super.getPtr(), damping);
+	}
+
+	/**
+	 * Gets the damping.
+	 * @return the particle damping.
+	 */
+	public float getDamping(){
+		return LiquidWrapperJNI.ParticleSystem_getDamping(super.getPtr());
+	}
+
+	/**
+	 * Sets the particles radius.
+	 * @param radius as the given radius.
+	 */
+	public void setRadius(float radius){
+		LiquidWrapperJNI.ParticleSystem_setRadius(super.getPtr(), radius);
+	}
+
+	/**
+	 * Gets the particles radius.
+	 * @return the particle radius.
+	 */
+	public float getRadius(){
+		return LiquidWrapperJNI.ParticleSystem_getRadius(super.getPtr());
+	}
 }

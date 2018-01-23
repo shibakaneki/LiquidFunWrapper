@@ -220,6 +220,104 @@ JNIEXPORT void JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_Partic
     pPartSys->SetParticleLifetime((int32)particleIndex, (float32)lifetime);
 }
 
+JNIEXPORT void JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_ParticleSystem_1setDensity(
+        JNIEnv *env,
+        jobject obj,
+        jlong particleSystemPtr,
+        jfloat density){
+
+    b2ParticleSystem* pPartSys = (b2ParticleSystem*)particleSystemPtr;
+    pPartSys->SetDensity((float32)density);
+}
+
+JNIEXPORT jfloat JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_ParticleSystem_1getDensity(
+        JNIEnv *env,
+        jobject obj,
+        jlong particleSystemPtr){
+
+    b2ParticleSystem* pPartSys = (b2ParticleSystem*)particleSystemPtr;
+    return (jfloat)pPartSys->GetDensity();
+}
+
+JNIEXPORT void JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_ParticleSystem_1setPaused(
+        JNIEnv *env,
+        jobject obj,
+        jlong particleSystemPtr,
+        jboolean isPaused){
+
+    b2ParticleSystem* pPartSys = (b2ParticleSystem*)particleSystemPtr;
+    pPartSys->SetPaused((bool)isPaused);
+}
+
+JNIEXPORT jboolean JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_ParticleSystem_1isPaused(
+        JNIEnv *env,
+        jobject obj,
+        jlong particleSystemPtr){
+
+    b2ParticleSystem* pPartSys = (b2ParticleSystem*)particleSystemPtr;
+    return (jboolean)pPartSys->GetPaused();
+}
+
+JNIEXPORT void JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_ParticleSystem_1setGravityScale(
+        JNIEnv *env,
+        jobject obj,
+        jlong particleSystemPtr,
+        jfloat gravityScale){
+
+    b2ParticleSystem* pPartSys = (b2ParticleSystem*)particleSystemPtr;
+    pPartSys->SetGravityScale((float32)gravityScale);
+}
+
+JNIEXPORT jfloat JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_ParticleSystem_1getGravityScale(
+        JNIEnv *env,
+        jobject obj,
+        jlong particleSystemPtr){
+
+    b2ParticleSystem* pPartSys = (b2ParticleSystem*)particleSystemPtr;
+    return (jfloat)pPartSys->GetGravityScale();
+}
+
+JNIEXPORT void JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_ParticleSystem_1setDamping(
+        JNIEnv *env,
+        jobject obj,
+        jlong particleSystemPtr,
+        jfloat damping){
+
+    b2ParticleSystem* pPartSys = (b2ParticleSystem*)particleSystemPtr;
+    pPartSys->SetDamping((float32)damping);
+}
+
+JNIEXPORT jfloat JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_ParticleSystem_1getDamping(
+        JNIEnv *env,
+        jobject obj,
+        jlong particleSystemPtr){
+
+    b2ParticleSystem* pPartSys = (b2ParticleSystem*)particleSystemPtr;
+    return (jfloat)pPartSys->GetDamping();
+}
+
+JNIEXPORT void JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_ParticleSystem_1setRadius(
+        JNIEnv *env,
+        jobject obj,
+        jlong particleSystemPtr,
+        jfloat radius){
+
+    b2ParticleSystem* pPartSys = (b2ParticleSystem*)particleSystemPtr;
+    pPartSys->SetRadius((float32)radius);
+}
+
+JNIEXPORT jfloat JNICALL Java_ch_shibastudio_liquidwrapper_LiquidWrapperJNI_ParticleSystem_1getRadius(
+        JNIEnv *env,
+        jobject obj,
+        jlong particleSystemPtr){
+
+    b2ParticleSystem* pPartSys = (b2ParticleSystem*)particleSystemPtr;
+    return (jfloat)pPartSys->GetRadius();
+}
+
+
+
+
 #ifdef __cplusplus
 }
 #endif
