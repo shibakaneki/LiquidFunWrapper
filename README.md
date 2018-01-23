@@ -19,7 +19,7 @@ allprojects {
 Then, add the following dependency in your application module _build.gradle_ file:
 
 ```
-compile 'ch.shibastudio:liquidwrapper:1.2'
+compile 'ch.shibastudio:liquidwrapper:1.3'
 ```
 
 
